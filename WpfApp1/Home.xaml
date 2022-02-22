@@ -1,0 +1,68 @@
+﻿<Page x:Class="WpfApp1.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="Home">
+
+    <Grid Background="#FFFFFEFD">
+        <Border BorderBrush="Black" 
+                BorderThickness="1"
+                HorizontalAlignment="Left" 
+                Height="250" 
+                Margin="0,0,0,80"
+                VerticalAlignment="Center"
+                Width="400"
+                Background="PaleGoldenrod">
+            <Image Source="Resources/캡처3.png"
+                   >
+                
+                
+            </Image>
+            
+        </Border>
+
+        <Border BorderBrush="Black"
+                BorderThickness="1"
+                HorizontalAlignment="Left" 
+                Height="115" 
+                Margin="432,170,0,0"
+                VerticalAlignment="Top"
+                Width="335">
+            <Label Content="º식당 운영 요일:월요일~일요일&#10;&#10;º학생회관: 309석&#10;&#10;º이용문의 : 031-8020-3913" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            
+            
+        </Border>
+        <Button  
+                HorizontalAlignment="Left"
+                 VerticalAlignment="Bottom" 
+            Width="800" 
+            Height="110"
+            Cursor="Hand" 
+            Click="Button_Click"
+            Background="Transparent"
+            >
+            <Image Source="Resources/로로.PNG"
+                   VerticalAlignment="Bottom">
+
+            </Image>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="112" Margin="432,42,0,0" VerticalAlignment="Top" Width="147"
+                Background="White"
+                Cursor="Hand" Click="Button_Click_2">
+            <Image Source="Resources/left-arrow.png"
+                   Height="50"></Image>
+        </Button>
+        <Button  HorizontalAlignment="Left" Height="112" Margin="620,42,0,0" VerticalAlignment="Top" Width="147"
+                 Background="White"
+                 Cursor="Hand" Click="Button_Click_1">
+            <Image Source="Resources/right-arrow.png"
+                   Height="50"></Image>
+        </Button>
+        <Label Content="학생회관" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

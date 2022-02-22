@@ -1,0 +1,262 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="700" Width="500"
+          ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="101*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="67*"/>
+
+        </Grid.RowDefinitions>
+        <Border Grid.RowSpan="5" Loaded="Border_Loaded" Grid.ColumnSpan="2" Margin="0,0,-0.4,0.4">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <GradientStop Color="#FF4900" Offset="0.0"/>
+                    <GradientStop Color="#FFFFFF" Offset="2"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border BorderBrush="black" 
+                    Background="#FFFFF5F5"
+                    BorderThickness="1" 
+                    Height="439"
+                    
+                    Width="450"                
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    CornerRadius="50"
+                    >
+
+            </Border>
+        </Border>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,-0.4,133.2" Grid.RowSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Resources/그림3.png" 
+                   Height="113"
+                   HorizontalAlignment="Center"/>
+
+
+            </StackPanel>
+
+            <Label Content="Main menu" 
+                           FontSize="50"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center" 
+                   Foreground="Black"
+                   
+                           FontFamily="./Fonts/#Parisienne"
+                           Background="Transparent"
+                           />
+
+            <Border Width="400"
+                            Height="2"
+                            Background="black"    
+                
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Center">
+
+            </Border>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" Grid.Column="1" Margin="79.97,19.4,131.6,19.2"
+                    >
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,60">
+                <Label Content="ID"
+                         Foreground="Black"
+                         
+                         BorderThickness="0"                  
+                         FontSize="20"   
+                       FontFamily="./Fonts/#Caveat" 
+                         HorizontalContentAlignment="Left"
+                         VerticalAlignment="Top" 
+                       
+                                              
+                         />
+                <TextBox x:Name="id" Text=""
+                         Width="200"
+                         Height="30"                        
+                         Foreground="black"
+                         Background="Transparent"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,0,1"
+                         VerticalAlignment="Bottom"
+                         MaxLength="15"   
+                         FontSize="15"
+                         
+                         />
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom" Grid.Column="1" Margin="42.97,0,94.6,0.2"                 
+                    >
+            <StackPanel Orientation="Horizontal"
+                         Margin="0,0,0,20">
+                <Label Content="Password"
+                         Foreground="black" 
+                         BorderThickness="0"                  
+                         FontSize="20" 
+                         FontFamily="./Fonts/#Caveat" 
+                         HorizontalContentAlignment="Left"
+                         VerticalAlignment="Top"
+                        
+                     />
+                <PasswordBox x:Name="pw"
+                             Foreground="black"
+                             Background="Transparent"
+                             BorderThickness="0,0,0,1"
+                             Width="230"
+                             Height="30" 
+                             BorderBrush="Black"                           
+                             MaxLength="15"
+                             FontSize="15"
+                            />
+
+
+            </StackPanel>
+
+            <StackPanel/>
+        </StackPanel>
+        <StackPanel Grid.Row="3"                   
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" Grid.Column="1" Margin="123.97,2,175.6,2" 
+                    >
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,100">
+                <Label Content="이름"
+                       FontFamily="./Fonts/#Poor Story"
+                         Foreground="black" 
+                         BorderThickness="0"                  
+                         FontSize="20" 
+                      
+                         HorizontalContentAlignment="Left"                        
+                         />
+                <TextBox x:Name="name" Text=""
+                        Foreground="Black"
+                         Background="Transparent"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,0,1"
+                         FontSize="15"
+                        MaxLength="5"
+                          Width="100"
+                         Height="30" 
+                         HorizontalContentAlignment="Left"/>
+
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" 
+                    HorizontalAlignment="Center" Grid.Column="1" Margin="89.97,133.4,141.6,0" Grid.RowSpan="2"            
+                    >
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Side menu" 
+                       Foreground="black"
+                       
+                       FontSize="30" 
+                       FontFamily="./Fonts/#Carattere"
+                       Background="Transparent"
+                       Width="150"
+                       Margin="40,0,0,0" FontWeight="Bold" 
+                           />
+            </StackPanel>
+            <Border Width="200"
+                            Height="2"
+                            Background="black"
+                    
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Center"
+                    Margin="10,0,0,0"
+                            />
+
+        </StackPanel>
+        <StackPanel Grid.Row="3" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" Grid.Column="1" Margin="105.97,58,158.6,58"                  
+                   >
+            <StackPanel Orientation="Horizontal"
+                        >
+                <TextBlock Text="성별"
+                           FontSize="20"
+                           FontFamily="./Fonts/#Poor Story"
+                           Foreground="Black"                           
+                           VerticalAlignment="Bottom"
+                                                                           
+                           />
+                <RadioButton x:Name="radiobutton1" Content="Men"
+                          Margin="30,10,0,0"/>
+                <RadioButton x:Name="radiobutton2"  Content="Women"
+                         Margin= "10,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" 
+                    Margin="113.97,108,165.6,8" Grid.Column="1" 
+                  
+                    >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="학번"
+                           FontFamily="./Fonts/#Poor Story"
+                           FontSize="20"
+                           Foreground="black"                                                  
+                           VerticalAlignment="Bottom"
+                          
+                           />
+                <ComboBox x:Name="combo"  Height="24" 
+                          Width="81"
+                          Margin="30,0,0,0"
+                          >
+
+                </ComboBox>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="4" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" Grid.Column="1" Margin="76.97,32,129.6,32.4"                      
+                    >
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Join"
+                        Content="회원가입"
+                        FontWeight="Bold"
+                        FontSize="24"
+                        FontFamily="./Fonts/#Poor Story"
+                        Click="Join_Click"
+                        Background="Transparent"
+                        BorderBrush="White"
+                        Foreground="white"
+                        Width="212"
+                        Height="63"  
+                        Cursor="Hand"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"           
+                        >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="50"/>
+                        </Style>
+
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

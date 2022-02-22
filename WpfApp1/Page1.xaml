@@ -1,0 +1,175 @@
+﻿<Page x:Class="WpfApp1.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000"
+      Title="Page1">
+    <Page.Resources>
+        <Style x:Key="ImageStyle1" TargetType="{x:Type Image}">
+            <Setter Property="FlowDirection" Value="LeftToRight"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Grid Grid.Column="0"
+                HorizontalAlignment="Left"
+                Background="#FFFBAF24"              
+                  Width="182"
+              >
+            
+                <Image Source="Resources/그림3.png"
+                   VerticalAlignment="Top"
+                       Margin="-70,15,-30,0"
+                   />
+
+            <StackPanel>
+                <Button 
+                    Click="Button_Click_5"
+                    Width="190"
+                    Height="50"
+                    Cursor="Hand"                   
+                    Background="Black"
+                    Opacity="0.5"
+                    BorderBrush="Transparent" 
+                    Margin="0,100,0,0">
+                    <Image Source="/Resources/House.png"                    
+                           Margin="0,0,110,0"></Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button  
+                    Click="Button_Click_1"
+                    Width="190"
+                    Height="50"
+                    Cursor="Hand"          
+                    Background="Black"
+                    Opacity="0.5"                  
+                    BorderBrush="Transparent"              
+                    Margin="0,170,0,0">
+                    <Image Source="/Resources/chat.png"              
+                           Margin="0,0,110,0"></Image>
+                </Button>
+            </StackPanel>
+
+            <StackPanel>
+                <Button 
+                        Click="Button_Click_2"  
+                        Width="190"
+                        Height="50"
+                        Cursor="Hand"  
+                        Background="Black"
+                        Opacity="0.5"
+                        BorderBrush="Transparent"
+                        Margin="0,240,0,0">
+                    <Image Source="/Resources/reserve.png"
+                           Margin="0,0,110,0"></Image>
+                </Button>
+            </StackPanel>
+            
+            <StackPanel>
+                <Button 
+                    Click="Button_Click_3"
+                    Width="190" 
+                    Height="50"
+                    Cursor="Hand"
+                    Background="Black"
+                    Opacity="0.5"
+                    BorderBrush="Transparent"
+                    Margin="0,310,0,0">
+                    <Image Source="/Resources/arrow.png" 
+                           Margin="0,0,110,0"></Image>
+                </Button>
+            </StackPanel>
+         
+            <Button 
+                Click="Button_Click_4"
+                Width="190" 
+                Height="50"
+                Background="Black"
+                Opacity="0.5"
+                BorderBrush="Transparent" 
+                HorizontalAlignment="Center"   
+                Cursor="Hand"
+                VerticalAlignment="Bottom" >
+                <Image Source="/Resources/power.png"
+                           Margin="0,0,110,0"
+                    Style="{DynamicResource ImageStyle1}" 
+                    VerticalAlignment="Bottom"></Image>
+            </Button>
+
+            <Label Content="Chat"
+                   Foreground="White"
+                   FontSize="30" 
+                   FontWeight="Bold"
+                   Width="80"
+                   Margin="80,170,0,0"
+                   Opacity="0.8"/>
+
+            <Label Content="Check"
+                   Foreground="White"
+                   FontSize="30"
+                   Width="100"
+                   Margin="80,245,0,0"
+                   Opacity="0.8" 
+                   FontWeight="Bold"/>
+            <Label Content="logout"
+                   Foreground="White"
+                   FontSize="25"
+                   Width="100"
+                   Margin="90,310,0,0"
+                   Opacity="0.8" 
+                   FontWeight="Bold"/>
+            <Label Content="Home"
+                   Foreground="White"
+                   FontSize="25"
+                   Width="100"
+                   Margin="90,100,0,0"
+                   Opacity="0.8" 
+                   FontWeight="Bold"/>
+            <Label Content="Exit"
+                   Foreground="White"
+                   FontSize="25"
+                   Width="100"
+                   Margin="120,0,0,0"  
+                   Opacity="0.8"
+                   FontWeight="Bold"
+                   VerticalAlignment="Bottom"
+                  />
+        </Grid>
+        
+        <Grid Grid.Column="1"
+             Background="White">
+            <StackPanel>
+                <Border Background="#FFBBBABA"
+                        Height="30"></Border>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Main"
+                       HorizontalAlignment="Center"></Label>
+                
+            </StackPanel>
+
+            <Frame  x:Name="Main"
+                    Content="Frame"
+                    HorizontalAlignment="Center"
+                    Height="400"                    
+                    VerticalAlignment="Bottom" 
+                    Width="800" />
+
+
+        </Grid>
+
+    </Grid>
+
+</Page>
